@@ -4,6 +4,7 @@
  * validate.js is open sourced under the MIT license.
  * Portions of validate.js are inspired by CodeIgniter.
  * http://rickharrison.github.com/validate.js
+ * chinese version: https://github.com/swizardlv/validate.js
  */
 
 (function(window, document, undefined) {
@@ -14,33 +15,33 @@
 
     var defaults = {
         messages: {
-            required: 'The %s field is required.',
-            matches: 'The %s field does not match the %s field.',
-            "default": 'The %s field is still set to default, please change.',
-            valid_email: 'The %s field must contain a valid email address.',
-            valid_emails: 'The %s field must contain all valid email addresses.',
-            min_length: 'The %s field must be at least %s characters in length.',
-            max_length: 'The %s field must not exceed %s characters in length.',
-            exact_length: 'The %s field must be exactly %s characters in length.',
-            greater_than: 'The %s field must contain a number greater than %s.',
-            less_than: 'The %s field must contain a number less than %s.',
-            alpha: 'The %s field must only contain alphabetical characters.',
-            alpha_numeric: 'The %s field must only contain alpha-numeric characters.',
-            alpha_dash: 'The %s field must only contain alpha-numeric characters, underscores, and dashes.',
-            numeric: 'The %s field must contain only numbers.',
-            integer: 'The %s field must contain an integer.',
-            decimal: 'The %s field must contain a decimal number.',
-            is_natural: 'The %s field must contain only positive numbers.',
-            is_natural_no_zero: 'The %s field must contain a number greater than zero.',
-            valid_ip: 'The %s field must contain a valid IP.',
-            valid_base64: 'The %s field must contain a base64 string.',
-            valid_credit_card: 'The %s field must contain a valid credit card number.',
-            is_file_type: 'The %s field must contain only %s files.',
-            valid_url: 'The %s field must contain a valid URL.',
-            greater_than_date: 'The %s field must contain a more recent date than %s.',
-            less_than_date: 'The %s field must contain an older date than %s.',
-            greater_than_or_equal_date: 'The %s field must contain a date that\'s at least as recent as %s.',
-            less_than_or_equal_date: 'The %s field must contain a date that\'s %s or older.'
+            required: '字段 %s 是必填项。',
+            matches: '字段 %s 和字段 %s 不一致。',
+            "default": '字段 %s 仍然是默认值，请修改',
+            valid_email: '字段 %s 必须包含合法Email地址。',
+            valid_emails: '字段 %s 必须包含全部合法Email地址。',
+            min_length: '字段 %s 长度上最少包含 %s 个字符。',
+            max_length: '字段 %s 长度上不能超过 %s 个字符。',
+            exact_length: '字段 %s 长度上必须是 %s 个字符。',
+            greater_than: '字段 %s 必须包含的数字必须大于 %s。',
+            less_than: '字段 %s  必须包含的数字必须小于 %s。',
+            alpha: '字段 %s 只能包含字母。',
+            alpha_numeric: '字段 %s 只能包含字母和数字。',
+            alpha_dash: '字段 %s 只能包含字母和数字，下划线（_）和斜线（/）。',
+            numeric: '字段 %s 只能包含数字。',
+            integer: '字段 %s 必须是整数。',
+            decimal: '字段 %s 必须是小数。',
+            is_natural: '字段 %s 只能包含正数。',
+            is_natural_no_zero: '字段 %s 的数字必须大于0。',
+            valid_ip: '字段 %s 必须包含合法的IP地址。',
+            valid_base64: '字段 %s 必须是一个 base64 字符串。',
+            valid_credit_card: '字段 %s 包含一个有效的信用卡号码。',
+            is_file_type: '字段 %s 只能包含 %s 类型的文件。',
+            valid_url: '字段 %s 只能包含有效的URL地址。',
+            greater_than_date: '字段 %s 必须是一个晚于 %s的日期。',
+            less_than_date: '字段 %s 必须是一个早于 %s的日期。',
+            greater_than_or_equal_date: '字段 %s 必须是一个晚于或等于 %s的日期。',
+            less_than_or_equal_date: '字段 %s 必须是一个早于或等于 %s 的日期。'
         },
         callback: function(errors) {
 

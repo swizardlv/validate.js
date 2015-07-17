@@ -2,6 +2,8 @@
 
 validate.js is a lightweight JavaScript form validation library inspired by CodeIgniter.
 
+Current fork for Chinese.
+
 ## Features
 
 - Validate form fields from over a dozen rules
@@ -66,7 +68,7 @@ jQuery: https://github.com/magizh/validate_helper
 
 jnhwkim's fork added multi-language support viewable at https://github.com/jnhwkim/validate.js
 
-Chinese - https://github.com/chilijung/validate.js
+Chinese - https://github.com/swizardlv/validate.js
 
 French - https://github.com/Facyla/validate.js
 
